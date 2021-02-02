@@ -19,3 +19,9 @@ jobs:
         with:
            name: 'project'
            path: project.tar.gz
+
+      - uses: eine/tip@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            project.tar.gz
