@@ -19,3 +19,6 @@ jobs:
         with:
            name: my-project
            path: project.tar.gz
+
+      - name: 'Echo download path'
+        run: echo ${{steps.download.outputs.download-path}}
