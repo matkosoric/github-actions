@@ -14,3 +14,8 @@ jobs:
           files: |
             ./project
           outPath: project.tar.gz
+
+      - uses: actions/upload-artifact@v2
+        with:
+           name: my-project
+           path: project.tar.gz
