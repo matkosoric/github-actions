@@ -4,16 +4,16 @@ jobs:
   create-tar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Compress action step
-        uses: master-atul/tar-action@v1.0.2
-        id: compress
-        with:
-          command: c
-          cwd: .
-          files: |
-            ./project
-          outPath: project.tar.gz
+#      - uses: actions/checkout@master
+#      - name: Compress action step
+#        uses: master-atul/tar-action@v1.0.2
+#        id: compress
+#        with:
+#          command: c
+#          cwd: .
+#          files: |
+#            ./project
+#          outPath: project.tar.gz
 
       - uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
