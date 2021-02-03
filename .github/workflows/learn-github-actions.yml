@@ -1,7 +1,7 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  create-tar:
+  create-release:
     runs-on: ubuntu-latest
     steps:
 
